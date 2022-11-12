@@ -75,9 +75,9 @@ const controls = new OrbitControls(camera, renderer.domElement);
 function animate() {
   requestAnimationFrame(animate);
 
-  // sphere.rotation.x += 0.01;
-  // sphere.rotation.y += 0.005;
-  // sphere.rotation.z += 0.01;
+  moon.rotation.x += 0.001;
+  sphere.rotation.y += 0.005;
+  sphere.rotation.z += 0.01;
 
   controls.update();
   renderer.render(scene, camera);
